@@ -19,7 +19,7 @@
     <h1>Kidsurukit Online</h1>
     <section class="hud">
       <div><strong>คิท</strong><div class="hp-bar"><div class="hp" style="background:#31d46a"></div></div></div>
-      <div><strong>วุ้นเขียว</strong><div class="hp-bar"><div id="slime-hp-bar" class="hp"></div></div></div>
+      <div><strong>วุ้นเขียว</strong><div class="hp-bar"><div id="slime-hp" class="hp"></div></div></div>
     </section>
     <section class="world">
       <div class="entity" style="border:4px solid #d8f4ff; background:#2589df">คิท</div>
@@ -31,7 +31,7 @@
       function attack() {
         slimeHp -= 34;
         if(slimeHp < 0) slimeHp = 0;
-        document.getElementById('slime-hp-bar').style.width = slimeHp + '%';
+        document.getElementById('slime-hp').style.width = slimeHp + '%';
         if(slimeHp === 0) alert('วุ้นเขียวถูกกำจัดแล้ว!');
       }
     </script>
